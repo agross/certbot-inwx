@@ -1,0 +1,3 @@
+[submodule "acme.sh-inwx"]
+	path = acme.sh-inwx
+	url = https://github.com/agross/acme.sh-inwx.git
