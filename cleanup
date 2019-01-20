@@ -6,5 +6,5 @@ echo Running DNS cleanup with CERTBOT_DOMAIN=$CERTBOT_DOMAIN CERTBOT_VALIDATION=
 
 set -x
 "${BASH_SOURCE[0]%/*}/acme.sh-inwx/acme-inwx.py" --remove \
-                                                 --acme-record-name "$CERTBOT_DOMAIN" \
-                                                 --challenge "$CERTBOT_VALIDATION"
+                                                 "--acme-record-name=$CERTBOT_DOMAIN" \
+                                                 "--challenge=$CERTBOT_VALIDATION"

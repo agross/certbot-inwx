@@ -6,6 +6,6 @@ echo Running DNS authenticator with CERTBOT_DOMAIN=$CERTBOT_DOMAIN CERTBOT_VALID
 
 set -x
 "${BASH_SOURCE[0]%/*}/acme.sh-inwx/acme-inwx.py" --add \
-                                                 --acme-record-name "$CERTBOT_DOMAIN" \
-                                                 --challenge "$CERTBOT_VALIDATION"
+                                                 "--acme-record-name=$CERTBOT_DOMAIN" \
+                                                 "--challenge=$CERTBOT_VALIDATION"
 sleep 30s
